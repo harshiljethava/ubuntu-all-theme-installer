@@ -29,6 +29,11 @@ def main():
 	11) Revival Icon
 	12) Masalla Icon
 	13) Numix-Circle Icon 
+	14) Square 2.0 Icon Pack
+	15) Shadow Icon 
+	16) Dalisha Icon 
+	17) Uniform icon
+	18) Numix
 	99) Exit
 				''')
 			theme_flag=int(input("\n\033[1;31menter>\033[1;m"))
@@ -102,6 +107,31 @@ def main():
 				cmd2 = os.system("sudo apt-get update -y")
 				cmd3 = os.system("sudo apt-get install numix-icon-theme -y ")
 				print("\n\033[1;36m Numix-Circle Icon theme installed successfully...\033[1;m")
+			elif(theme_flag == 14 ):
+				cmd1 = os.system("sudo add-apt-repository ppa:noobslab/icons2 -y ")
+				cmd2 = os.system("sudo apt-get update -y")
+				cmd3 = os.system("sudo apt-get install square-icons -y ")
+				print("\n\033[1;36m  Square 2.0 Icon Pack  installed successfully...\033[1;m")
+			elif(theme_flag == 15 ):
+				cmd1 = os.system("sudo add-apt-repository ppa:noobslab/icons -y ")
+				cmd2 = os.system("sudo apt-get update -y")
+				cmd3 = os.system("sudo apt-get install shadow-icon-theme -y ")
+				print("\n\033[1;36mShadow Icon installed successfully...\033[1;m")
+			elif(theme_flag == 16 ):
+				cmd1 = os.system("sudo add-apt-repository ppa:noobslab/icons -y ")
+				cmd2 = os.system("sudo apt-get update -y")
+				cmd3 = os.system("sudo apt-get install dalisha-icons -y ")
+				print("\n\033[1;36mDalisha Icon  installed successfully...\033[1;m")
+			elif(theme_flag == 17 ):
+				cmd1 = os.system("sudo add-apt-repository ppa:noobslab/icons2 -y ")
+				cmd2 = os.system("sudo apt-get update -y")
+				cmd3 = os.system("sudo apt-get install uniform-icons -y ")
+				print("\n\033[1;36mUniform icon installed successfully...\033[1;m")
+			elif(theme_flag == 18 ):
+				cmd1 = os.system("sudo apt-add-repository ppa:numix/ppa -y ")
+				cmd2 = os.system("sudo apt-get update -y")
+				cmd3 = os.system("sudo apt-get install numix-icon-theme-circle -y ")
+				print("\n\033[1;36mNumix Icon  installed successfully...\033[1;m")
 			else:
 				print("\nTerminating ....\
 					\nBye ...")
